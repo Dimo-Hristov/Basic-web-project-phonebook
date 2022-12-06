@@ -1,13 +1,4 @@
-const phonebook = [
-	{
-		name: 'pesho',
-		number: '1234'
-	},
-	{
-		name: 'gosho',
-		number: '12345'
-	}
-];
+const phonebook = [];
 
 /* TODO: 
 	create phonebook array
@@ -16,4 +7,13 @@ const phonebook = [
 */
 function getContacts() {
 	return phonebook.slice();
+}
+
+function addContact(contact) {
+	phonebook.push(contact);
+}
+
+module.exports = {
+	getContacts,
+	addContact,
 }
